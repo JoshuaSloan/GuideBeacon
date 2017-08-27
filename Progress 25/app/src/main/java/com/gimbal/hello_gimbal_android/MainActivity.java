@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
     float stepCounter = 0, originalStepCounter =0;
     Long originalTime,endTime;
     TextView stepCounterView;
-
     boolean pathPreview;            //used to determine whether or not a path preview is provided
     boolean turnByTurnNav;          //used to determine if turn by turn navigation is provided
     boolean avoidStaircases;        //used to determine if alternate path mapping avoiding stairs is provided
