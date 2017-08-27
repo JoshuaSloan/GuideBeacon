@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Voice Settings"
+        android:key="pref_key_storage_settings">
+
+        <CheckBoxPreference
+            android:key="pref_key_path_preview"
+            android:summary="Include an explanation of the path prior to navigation."
+            android:title="Path preview"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="pref_key_turn_by_turn"
+            android:summary="Tell the user where to go based on current location."
+            android:title="Turn by turn navigation"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Navigation Settings"
+        android:key="pref_key_storage_settings">
+
+        <CheckBoxPreference
+            android:key="pref_key_avoid_stairs"
+            android:summary="Avoid paths with staircases."
+            android:title="Handicapped mode"
+            android:defaultValue="false"/>
+
+        <ListPreference
+            android:key="pref_walk_speed"
+            android:title="Walking speed selection"
+            android:summary="Assist with beacon accuracy by letting us know your walking pace."
+            android:entries="@array/walkSpeedEntries"
+            android:entryValues="@array/walkSpeedValues"
+            android:defaultValue="1"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Language Settings"
+        android:key="pref_key_language">
+
+        <ListPreference
+            android:key="pref_language"
+            android:title="Language selection"
+            android:summary="%s"
+            android:entries="@array/languageEntries"
+            android:entryValues="@array/languageValues"
+            android:defaultValue="1"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

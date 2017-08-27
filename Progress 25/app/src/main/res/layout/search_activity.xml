@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/potential_bg_light"
+    tools:context="com.gimbal.hello_gimbal_android.SearchActivity">
+
+    <ImageView
+        android:id="@+id/gblogo"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/guidebeacon_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.52"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Double-Tap the screen to begin"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtView"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_gravity="bottom"
+        android:src="@drawable/logo_clear" />
+
+        <TextView
+            android:id="@+id/developerCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed by: Seyed Ali Cheraghi and Joshua Sloan"
+            android:layout_below="@id/imageView2"
+            android:textSize="10dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
